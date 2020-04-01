@@ -42,8 +42,9 @@ This will install and run metricbeat.
 
 1. Enter the following script into the console using elevated privileges
 
-````Linux
+```Linux
 curl https://olympus-io.github.io/vizion.ai/beat-install-scripts/install-config-auditbeat.sh > install-config-auditbeat.sh; chmod a+x  install-config-auditbeat.sh; ./install-config-auditbeat.sh _PLACEHOLDER_API_ENDPOINT_
+```
 
 2. When prompted, select the proper environment to complete the installation.
 
