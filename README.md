@@ -77,7 +77,7 @@ curl https://olympus-io.github.io/vizion.ai/beat-install-scripts/install-config-
 
 ### Windows:
 
-1. [Download Auditbeat.](https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-oss-6.5.4-windows-x86_64.zip)
+1. 1. As administrator, enter the following command in Powershell or download the zip file [here](https://github.com/themarcusaurelius/Auditbeat/archive/master.zip).
 
 2. Extract the contents of the zip file into the ```C:\``` drive.
 
