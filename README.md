@@ -53,13 +53,6 @@ Password: _PLACEHOLDER_PASSWORD_
 Elasticsearch API Endpoint: _PLACEHOLDER_API_ENDPOINT_
 ```
 
-5. Choose the folder you would like to monitor and click OK:
-
-<p align="center">
-    <img src="https://giant.gfycat.com/DelayedSandyHammerheadbird.gif">
-</p>
-
-
 This will install and run auditbeat.
 
 **Data should now be shipping to your Vizion Elastic app. Check the ```Discover``` tab in Kibana for the incoming logs**
