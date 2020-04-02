@@ -1,4 +1,4 @@
-## Auditbeat - Auditbeat is an open source shipping agent that lets you ship audit data to one or more destinations, including Logstash.
+## Auditbeat - An open source shipping agent that sends audit data to elasticsearch.
 
 Install on your servers to audit the activities of users and processes on your systems. For example, you can use Auditbeat to collect and centralize audit events from the Linux Audit Framework. You can also use Auditbeat to detect changes to critical files, like binaries and configuration files, and identify potential security policy violations.
 
