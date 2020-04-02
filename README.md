@@ -4,7 +4,7 @@ Install on your servers to audit the activities of users and processes on your s
 
 ### Default folders monitored:
 
-##### Windows 
+##### Windows: 
 
 ```
   - C:/windows
@@ -13,7 +13,7 @@ Install on your servers to audit the activities of users and processes on your s
   - C:/Program Files (x86)
 ```
 
-##### Linux
+##### Linux:
 
 ```
   - /bin
