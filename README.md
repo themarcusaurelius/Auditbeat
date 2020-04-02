@@ -150,3 +150,87 @@ start-service auditbeat
 **Data should now be shipping to your Vizion Elastic app. Check the ```Discover``` tab in Kibana for the incoming logs**
 
 <hr>
+
+
+### Linux
+
+1. Download and install Auditbeat by choosing your system.
+
+  <b>Debian</b>
+
+```
+curl -L -O https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.6.1-amd64.deb
+sudo dpkg -i auditbeat-7.6.1-amd64.deb
+```
+
+  <b>RPM</b>
+
+```
+curl -L -O https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.6.1-x86_64.rpm
+sudo rpm -vi auditbeat-7.6.1-x86_64.rpm
+```
+
+  <b>Mac</b>
+
+```
+curl -L -O https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.6.1-darwin-x86_64.tar.gz
+tar xzvf auditbeat-7.6.1-darwin-x86_64.tar.gz
+```
+
+  <b>Tar/Linux:</b>
+
+```
+curl -L -O https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-6.5.4-linux-x86_64.tar.gz
+tar xzvf auditbeat-6.5.4-linux-x86_64.tar.gz
+```
+
+2. Configure Auditbeat by opening the ```auditbeat.yml```.
+
+```
+sudo vi /etc/auditbeat/auditbeat.yml
+```
+
+3. Add the proper credentials to the Kibana and Elasticsearch sections of the ```auditbeat.yml``` file. 
+
+  <b>Kibana:</b>
+
+```yaml
+setup.kibana
+  host: "_PLACEHOLDER_KIBANA_URL_"
+  username: "_PLACEHOLDER_USERNAME_"
+  password: "_PLACEHOLDER_PASSWORD_"
+```
+
+  <b>Elasticsearch Output:</b>
+
+```yaml
+output.elasticsearch
+  hosts: ["_PLACEHOLDER_API_ENDPOINT_"]
+```
+
+3. Test the configuration:
+
+ Change to the directory where the Auditbeat binary is installed, and run Auditbeat in the foreground with the following options    specified:
+
+```
+auditbeat test config -e
+```
+
+<i>If you do not see any ERROR messages, than the configuration is correct.</i>
+
+4. Set up the Kibana Dashboards:
+
+```
+auditbeat setup --dashboards
+```
+
+5. Start Auditbeat
+
+```
+service auditbeat start
+```
+
+**Data should now be shipping to your Vizion Elastic app. Check the ```Discover``` tab in Kibana for the incoming logs**
+
+
+
