@@ -79,6 +79,10 @@ curl https://olympus-io.github.io/vizion.ai/beat-install-scripts/install-config-
 
 1. As administrator, enter the following command in Powershell or download the zip file [here](https://github.com/themarcusaurelius/Auditbeat/archive/master.zip).
 
+```
+Start-BitsTransfer -Source 'https://github.com/themarcusaurelius/Auditbeat/archive/master.zip' -Destination 'C:\Users\Administrator\Downloads\Auditbeat.zip'
+```
+
 2. Extract the contents of the zip file into the ```C:\``` drive.
 
 3.  Rename the ```auditbeat-6.5.4-windows``` directory in the C:\ drive to ```Auditbeat```.
