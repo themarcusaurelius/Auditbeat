@@ -71,5 +71,11 @@ curl https://olympus-io.github.io/vizion.ai/beat-install-scripts/install-config-
 
 <hr>
 
+## Example Dashboard
+
+The dashboards are provided as examples. We recommend that you customize them to meet your needs.
+
+![Imgur](https://imgur.com/WJrEPuq.jpg)
+
 
 
